@@ -1,10 +1,10 @@
 # ard-usm2
-Arduino Ultrasonic Musical Keyboard, powered by Maker Uno. Uses the ssd1306 0.96" OLED Display (I2C) and u8g2 library for display.
+Arduino Ultrasonic Musical Keyboard (Version 2), powered by Maker Uno. Uses the ssd1306 0.96" OLED Display (I2C) and u8g2 library for display.
 
 ## Components
-- Maker Uno
+- Maker Uno (Arduino Uno can also be used, just update the pin constants accordingly)
 - SSD1306 0.96" OLED Display (I2C)
-- Ultrasonic Sensor
+- Ultrasonic Sensor [PING))) Ultrasonic Distance Sensor]
 
 ## Schematics
 ```
