@@ -14,8 +14,9 @@
 #define HG 64
 
 //Tone
-#define ITVL  5         //Interval between each note (cm)
-#define T_LEN 13        //Number of notes available
+#define ITVL    5         //Interval between each note (cm)
+#define T_LEN   14        //Number of notes available + 1
+#define OFFSET  10        //Offset melody start distance (cm)
 
 U8X8_SSD1306_128X64_NONAME_HW_I2C u8x8(/* reset=*/ U8X8_PIN_NONE);
 
@@ -85,7 +86,7 @@ void draw(void) {
   //Draw str
   char bufN[16];   //Note
   char bufI[16];  //ID
-  sprintf (bufN, "%s ", (dist > 9 && dist <= T_LEN * ITVL) ? names[(dist - 10) / ITVL ] : "._.");
+  sprintf (bufN, "%s ", (dist > 9 && dist <= T_LEN * ITVL) ? names[(dist - OFFSET) / ITVL ] : "._.");
   sprintf (bufI, "DIST: %dCM ", dist);
   u8x8.setFont(u8x8_font_saikyosansbold8_u);
   u8x8.draw2x2String(5, 2, bufN);
@@ -124,8 +125,8 @@ void loop()
   // convert the time into a distance
   dist = microsecondsToCentimeters(duration);
 
-  if (dist > 9 && dist < T_LEN * ITVL) {
-    tone(SPPIN, notes[(dist - 10) / ITVL], 500);
+  if (dist > 9 && dist <= T_LEN * ITVL) {
+    tone(SPPIN, notes[(dist - OFFSET) / ITVL], 500);
     idle = 0;
   } else {
     noTone(SPPIN);
