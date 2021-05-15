@@ -1,7 +1,15 @@
 # ard-usm2
+<a href="LICENSE" ><img src="https://img.shields.io/github/license/1487quantum/ard-usm2?style=flat-square"/></a>
+<a href="https://github.com/1487quantum/ard-ultrasonic-pong/actions/workflows/ard-ci.yml" ><img src="https://img.shields.io/github/workflow/status/1487quantum/ard-usm2/Arduino-CI?label=Build&logo=arduino&style=flat-square"/></a>
+
+<a href="https://cyaninfinite.com/ultrasonic-sensor-projects/" ><img src="https://img.shields.io/badge/Documentation-@Cyaninfinite-blue?style=for-the-badge"/></a>
+
+
 Arduino Ultrasonic Musical Keyboard (Version 2), powered by Maker Uno. Uses the ssd1306 0.96" OLED Display (I2C) and u8g2 library for display.
 
+
 ## Components
+
 - Maker Uno (Arduino Uno can also be used, just update the pin constants accordingly)
 - SSD1306 0.96" OLED Display (I2C)
 - Ultrasonic Sensor [PING))) Ultrasonic Distance Sensor]
@@ -35,4 +43,9 @@ Ultrasonic Sensor (GND) <-->  |GND                8|  <--> Piezo Speaker (Onboar
 
 ```
 ## Libraries
-- u8g2: https://github.com/olikraus/u8g2
+The `u8g2` graphics library is required, ensure that it is installed before running the code. (The library could be install via the Library Manager.)
+
+More info on the library: https://github.com/olikraus/u8g2
+
+# License
+Licensed under the [MIT License](./LICENSE).
