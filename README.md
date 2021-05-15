@@ -1,6 +1,6 @@
 # ard-usm2
 <a href="LICENSE" ><img src="https://img.shields.io/github/license/1487quantum/ard-usm2?style=flat-square"/></a>
-<a href="https://github.com/1487quantum/ard-ultrasonic-pong/actions/workflows/ard-ci.yml" ><img src="https://img.shields.io/github/workflow/status/1487quantum/ard-usm2/Arduino-CI?label=Build&logo=arduino&style=flat-square"/></a>
+<a href="https://github.com/1487quantum/ard-usm2/workflows/ard-ci.yml" ><img src="https://img.shields.io/github/workflow/status/1487quantum/ard-usm2/Arduino-CI?label=Build&logo=arduino&style=flat-square"/></a>
 
 <a href="https://cyaninfinite.com/ultrasonic-sensor-projects/" ><img src="https://img.shields.io/badge/Documentation-@Cyaninfinite-blue?style=for-the-badge"/></a>
 
